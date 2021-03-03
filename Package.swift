@@ -6,7 +6,8 @@ import PackageDescription
 let package = Package(
   name: "Rendery",
   products: [
-    .executable(name: "UsageExample", targets: ["UsageExample"]),
+    //.executable(name: "UsageExample", targets: ["UsageExample"]),
+    .library(name: "Rendery", targets: ["Rendery"]),
   ],
   dependencies: [
     .package(url: "https://github.com/apple/swift-numerics", from: "0.0.5"),
